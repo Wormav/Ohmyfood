@@ -2,7 +2,7 @@
 
 Third project of the web developer path at Openclassrooms. The objective is to integrate the model of a catering site called "Ohmyfood" (see image below) in mobile first.
 
-! [Ohmyfood mobile mockup](./Img/maquettes/Accueil.png)
+![Ohmyfood mobile mockup](./img/maquettes/Accueil.png)
 
 ## Elements provided by the virtual company.
 
