@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet 3 OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremy-lorette/Ohmyfood.git"
+  },
+  "author": "Jérémy Lorette",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremy-lorette/Ohmyfood/issues"
+  },
+  "homepage": "https://github.com/jeremy-lorette/Ohmyfood#readme",
+  "dependencies": {
+    "sass": "^1.47.0"
+  }
+}
