@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.header {
+    height: auto;
+  &__logo {
+    display: flex;
+    justify-content: center;
+    font-family: "Shrikhand";
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding-bottom: 0.3rem;
+  }
+}
+
+.localisation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    background-color: rgb(196, 193, 193);
+    &__icon{
+        margin-right: 0.5rem;
+        color: #7A7A7A; 
+    }
+    &__texte{
+        font-family: "Roboto";
+        font-size: 16px;
+        color: #7A7A7A;
+               
+    }
+}
