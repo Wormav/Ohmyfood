@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Roboto";
 }
 
 .header {
@@ -22,17 +23,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 4rem;
-  background-color: #c4c1c1;
+  height: 3rem;
+  background: #acacac;
+  background: linear-gradient(180deg, #acacac 0%, #dddddd 6%, #e9e9e9 100%, #00d4ff 100%);
 }
 .localisation__icon {
-  margin-right: 0.5rem;
-  color: #7A7A7A;
+  margin-right: 1rem;
+  color: black;
 }
 .localisation__texte {
   font-family: "Roboto";
   font-size: 16px;
-  color: #7A7A7A;
+  color: black;
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F6F6F6;
+  padding: 2rem 1rem;
+}
+.search__title {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+.search__texte {
+  text-align: center;
+  color: gray;
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

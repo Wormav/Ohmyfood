@@ -1,11 +1,11 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Roboto";
 }
 
-
 .header {
-    height: auto;
+  height: auto;
   &__logo {
     display: flex;
     justify-content: center;
@@ -18,19 +18,45 @@
 }
 
 .localisation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 4rem;
-    background-color: rgb(196, 193, 193);
-    &__icon{
-        margin-right: 0.5rem;
-        color: #7A7A7A; 
-    }
-    &__texte{
-        font-family: "Roboto";
-        font-size: 16px;
-        color: #7A7A7A;
-               
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  background: rgb(172, 172, 172);
+  background: linear-gradient(
+    180deg,
+    rgba(172, 172, 172, 1) 0%,
+    rgba(221, 221, 221, 1) 6%,
+    rgba(233, 233, 233, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  &__icon {
+    margin-right: 1rem;
+    color: black;
+  }
+  &__texte {
+    font-family: "Roboto";
+    font-size: 16px;
+    color: black;
+  }
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+  padding: 2rem 1rem;
+
+  &__title {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 1rem;
+  }
+
+  &__texte {
+    text-align: center;
+    color: #656565;
+    margin-bottom: 2rem;
+  }
 }
