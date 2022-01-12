@@ -1,0 +1,22 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $greyBackground;
+  padding: 2rem 1rem;
+
+  &__title {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 1rem;
+  }
+
+  &__texte {
+    text-align: center;
+    color: #656565;
+    margin-bottom: 2rem;
+  }
+  &__btn{
+    margin-bottom: 1.5rem;
+  }
+}
