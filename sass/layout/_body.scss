@@ -16,7 +16,48 @@
     color: #656565;
     margin-bottom: 2rem;
   }
-  &__btn{
+  &__btn {
     margin-bottom: 1.5rem;
+  }
+}
+
+.process {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 22px;
+    margin: 2rem 0 1rem;
+    padding: 0 1rem;
+  }
+
+  &__listing {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+  &__btn {
+    width: auto;
+    height: 4rem;
+    background-color: $greyBackground;
+    box-shadow: 0 0.3rem 16px rgb(189, 187, 187);
+    color: black;
+    font-size: 15px;
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  &__number {
+    border-radius: 500px;
+    background-color: $primary;
+    width: 0.7rem;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    padding: 3px 8px 3px 8px;
+    transform: translateX(-40%) translateY(180%);
   }
 }
