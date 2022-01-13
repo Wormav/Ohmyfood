@@ -1,3 +1,39 @@
 .hero__btn {
-    @include searchBtn
+  background: rgb(238, 115, 218);
+  background: linear-gradient(
+    180deg,
+    rgba(238, 115, 218, 1) 0%,
+    rgba(160, 90, 220, 1) 100%
+  );
+  box-shadow: 0 0.3rem 16px rgb(153, 153, 153);
+  width: auto;
+  height: 3rem;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+
+  &:hover{
+    @include hoverBtn;
+  }
 }
+
+.process__btn {
+    width: auto;
+    height: 4.1rem;
+    background-color: $greyBackground;
+    box-shadow: 0 0.3rem 16px rgb(189, 187, 187);
+    color: black;
+    font-size: 15px;
+    border: none;
+    border-radius: 1rem;
+    padding: 0 1rem;
+    cursor: pointer;
+
+    &:hover {
+      @include hoverBtn;
+      background-color: $primary;
+    }
+  }

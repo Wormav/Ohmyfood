@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: auto;
   background-color: $greyBackground;
   padding: 2rem 1rem;
 
@@ -24,6 +25,7 @@
 .process {
   display: flex;
   flex-direction: column;
+  width: auto;
 
   &__title {
     font-size: 22px;
@@ -34,22 +36,9 @@
   &__listing {
     display: flex;
     flex-direction: column;
-    padding: 0 2rem;
+    align-content: center;
+    padding: 0 1.5rem;
   }
-
-  &__btn {
-    width: auto;
-    height: 4rem;
-    background-color: $greyBackground;
-    box-shadow: 0 0.3rem 16px rgb(189, 187, 187);
-    color: black;
-    font-size: 15px;
-    border: none;
-    border-radius: 1rem;
-    padding: 1rem;
-    cursor: pointer;
-  }
-
   &__number {
     border-radius: 500px;
     background-color: $primary;
@@ -58,6 +47,11 @@
     color: white;
     font-size: 16px;
     padding: 3px 8px 3px 8px;
-    transform: translateX(-40%) translateY(180%);
+    transform: translateX(-40%) translateY(260%);
+  }
+  &__icon {
+    width: 1rem;
+    font-size: larger;
+    transform: translateX(250%) translateY(225%);
   }
 }
