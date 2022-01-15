@@ -55,3 +55,65 @@
     transform: translateX(250%) translateY(225%);
   }
 }
+
+.restaurants {
+  background-color: $greyBackground;
+  margin-top: 3rem;
+  justify-content: center;
+
+  &__title {
+    padding-top: 2rem;
+    margin-left: 1rem;
+    font-size: 22px;
+  }
+
+  &__container {
+    display: grid;
+    grid-gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  &__element {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1rem 1rem;
+    height: 16rem;
+    width: 21rem;
+    margin: 0 1rem;
+  }
+
+  &__new{
+    position: absolute;
+    transform: translateX(310%) translateY(40%);
+    object-fit: cover;
+    text-align: center;
+    font-size: 14px;
+    background-color: $tertiary;
+    color: $fontNew;
+    padding:0.5rem;
+    width: 4rem;
+    border-radius: 0.3rem;
+  }
+
+  &__img {
+    height: 11rem;
+    width: auto;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 1rem 0 0 1rem;
+  }
+
+  &__localisation {
+    font-size: 18px;
+    margin: 0.3rem 0 0 1rem;
+    color: black;
+    font-weight: lighter;
+  }
+}
