@@ -1,0 +1,37 @@
+.footer {
+  background-color: $footerDark;
+
+  &__title {
+    padding: 1rem;
+  }
+
+  &__title a {
+    font-family: "Shrikhand";
+    font-size: 18px;
+    color: white;
+  }
+
+  &__element {
+    display: flex;
+    flex-direction: row;
+  }
+  &__icon {
+    color: white;
+    margin-right: 1rem;
+    padding: 0 0 0.5rem 1rem;
+    font-size: 12px;
+  }
+  &__link {
+    color: white;
+    font-size: 14px;
+    padding-bottom: 0.5rem;
+
+    &--secondary {
+      padding: 0 0 0.5rem 1rem;
+    }
+  }
+}
+
+.iconAjusted{
+    margin-left: -0.3rem;
+}

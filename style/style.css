@@ -6,6 +6,19 @@
   font-family: "Roboto";
 }
 
+a:visited {
+  color: white;
+}
+
+a:link {
+  color: white;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
 .hero__btn {
   background: #ee73da;
   background: linear-gradient(180deg, #ee73da 0%, #a05adc 100%);
@@ -216,6 +229,40 @@
   margin: 0.3rem 0 0 1rem;
   color: black;
   font-weight: lighter;
+}
+
+.footer {
+  background-color: #353535;
+}
+.footer__title {
+  padding: 1rem;
+}
+.footer__title a {
+  font-family: "Shrikhand";
+  font-size: 18px;
+  color: white;
+}
+.footer__element {
+  display: flex;
+  flex-direction: row;
+}
+.footer__icon {
+  color: white;
+  margin-right: 1rem;
+  padding: 0 0 0.5rem 1rem;
+  font-size: 12px;
+}
+.footer__link {
+  color: white;
+  font-size: 14px;
+  padding-bottom: 0.5rem;
+}
+.footer__link--secondary {
+  padding: 0 0 0.5rem 1rem;
+}
+
+.iconAjusted {
+  margin-left: -0.3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
