@@ -46,6 +46,34 @@
   background-color: #9356DC;
 }
 
+.restaurants__heart {
+  position: absolute;
+  width: 50px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  align-self: flex-end;
+  margin: 12.3rem 1rem 0 0;
+}
+
+.heart__Svg--full {
+  height: 1.5rem;
+  fill: url(#heart-full);
+}
+
+.heart__Svg--empty {
+  position: absolute;
+  height: 1.5rem;
+  fill: white;
+  stroke: black;
+  stroke-width: 20px;
+}
+.heart__Svg--empty:hover {
+  opacity: 0;
+  transition: 0.5s;
+}
+
 .header {
   height: auto;
 }
@@ -155,6 +183,10 @@
   height: 16rem;
   width: 21rem;
   margin: 0 1rem;
+}
+.restaurants__element:hover {
+  scale: 1.03;
+  transition: 0.5s;
 }
 .restaurants__new {
   position: absolute;

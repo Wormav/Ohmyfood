@@ -15,25 +15,53 @@
   padding: 1rem;
   cursor: pointer;
 
-  &:hover{
+  &:hover {
     @include hoverBtn;
   }
 }
 
 .process__btn {
-    width: auto;
-    height: 4.1rem;
-    background-color: $greyBackground;
-    box-shadow: 0 0.3rem 16px rgb(189, 187, 187);
-    color: black;
-    font-size: 15px;
-    border: none;
-    border-radius: 1rem;
-    padding: 0 1rem;
-    cursor: pointer;
+  width: auto;
+  height: 4.1rem;
+  background-color: $greyBackground;
+  box-shadow: 0 0.3rem 16px rgb(189, 187, 187);
+  color: black;
+  font-size: 15px;
+  border: none;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  cursor: pointer;
 
-    &:hover {
-      @include hoverBtn;
-      background-color: $primary;
-    }
+  &:hover {
+    @include hoverBtn;
+    background-color: $primary;
   }
+}
+
+.restaurants__heart {
+  position: absolute;
+  width: 50px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  align-self: flex-end;
+  margin: 12.3rem 1rem 0 0;
+}
+
+.heart__Svg--full {
+  height: 1.5rem;
+  fill: url(#heart-full);
+}
+
+.heart__Svg--empty {
+  position: absolute;
+  height: 1.5rem;
+  fill: white;
+  stroke: black;
+  stroke-width: 20px;
+  &:hover {
+    opacity: 0;
+    transition: 0.5s;
+  }
+}

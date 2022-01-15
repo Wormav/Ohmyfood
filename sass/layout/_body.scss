@@ -82,6 +82,10 @@
     height: 16rem;
     width: 21rem;
     margin: 0 1rem;
+    &:hover{
+      scale: 1.03;
+      transition: 0.5s;
+    }
   }
 
   &__new{
@@ -115,5 +119,6 @@
     margin: 0.3rem 0 0 1rem;
     color: black;
     font-weight: lighter;
+    
   }
 }
