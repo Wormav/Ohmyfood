@@ -37,7 +37,10 @@
     display: flex;
     flex-direction: column;
     align-content: center;
+    margin: auto;
     padding: 0 1.5rem;
+    min-width: 80%;
+    max-width: 500px;
   }
   &__number {
     border-radius: 500px;
@@ -73,6 +76,10 @@
     margin-top: 1rem;
     justify-content: center;
 
+    @media (min-width: 1000px) {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
   }
 
   &__element {
@@ -82,17 +89,21 @@
     border-radius: 1rem 1rem;
     height: 16rem;
     width: 21rem;
-    margin: 0 1rem ;
-    &:nth-child(4){
-       margin-bottom: 4rem;
+    margin: 0 1rem;
+
+    @media (min-width: 1400px) {
+      width: 30rem;
     }
-    &:hover{
+    &:nth-child(4) {
+      margin-bottom: 4rem;
+    }
+    &:hover {
       scale: 1.03;
       transition: 0.5s;
     }
   }
 
-  &__new{
+  &__new {
     position: absolute;
     transform: translateX(310%) translateY(40%);
     object-fit: cover;
@@ -100,7 +111,7 @@
     font-size: 14px;
     background-color: $tertiary;
     color: $fontNew;
-    padding:0.5rem;
+    padding: 0.5rem;
     width: 4rem;
     border-radius: 0.3rem;
   }
@@ -123,6 +134,5 @@
     margin: 0.3rem 0 0 1rem;
     color: black;
     font-weight: lighter;
-    
   }
 }

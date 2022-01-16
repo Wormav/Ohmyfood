@@ -32,6 +32,7 @@
   padding: 0 1rem;
   cursor: pointer;
 
+
   &:hover {
     @include hoverBtn;
     background-color: $primary;

@@ -1,6 +1,11 @@
 .footer {
   background-color: $footerDark;
-  
+  @media (min-width: 1000px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 
   &__title {
     padding: 1rem;
@@ -15,8 +20,15 @@
   &__element {
     display: flex;
     flex-direction: row;
-    &:nth-child(5){
+    &:nth-child(5) {
       padding-bottom: 4rem;
+
+      @media (min-width:1000px){
+        padding-bottom: 0;
+      }
+    }
+    @media (min-width: 1000px) {
+      margin: auto;
     }
   }
   &__icon {
@@ -36,6 +48,6 @@
   }
 }
 
-.iconAjusted{
-    margin-left: -0.3rem;
+.iconAjusted {
+  margin-left: -0.3rem;
 }
