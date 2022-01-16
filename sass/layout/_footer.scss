@@ -1,5 +1,6 @@
 .footer {
   background-color: $footerDark;
+  
 
   &__title {
     padding: 1rem;
@@ -14,6 +15,9 @@
   &__element {
     display: flex;
     flex-direction: row;
+    &:nth-child(5){
+      padding-bottom: 4rem;
+    }
   }
   &__icon {
     color: white;

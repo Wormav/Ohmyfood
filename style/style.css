@@ -197,6 +197,9 @@ a:link {
   width: 21rem;
   margin: 0 1rem;
 }
+.restaurants__element:nth-child(4) {
+  margin-bottom: 4rem;
+}
 .restaurants__element:hover {
   scale: 1.03;
   transition: 0.5s;
@@ -245,6 +248,9 @@ a:link {
 .footer__element {
   display: flex;
   flex-direction: row;
+}
+.footer__element:nth-child(5) {
+  padding-bottom: 4rem;
 }
 .footer__icon {
   color: white;
