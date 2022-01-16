@@ -1,0 +1,30 @@
+@keyframes flash {
+        0% {
+            color:$secondary;
+            text-shadow: 0 0 7px $secondary;
+        }
+        90% {
+            color:$primary;
+            text-shadow: none;
+        }
+        100% {
+            color:$secondary;
+            text-shadow: 0 0 7px $secondary;
+        }
+    }
+
+    @keyframes loader{
+        0% {
+            opacity: 0.9;
+        }
+        80% {
+            opacity: 0.8;
+        }
+
+        90%{
+            opacity: 0.7;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
