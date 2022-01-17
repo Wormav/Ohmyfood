@@ -19,6 +19,21 @@ a:link {
   text-decoration: none;
 }
 
+@-webkit-keyframes flash {
+  0% {
+    color: #FF79DA;
+    text-shadow: 0 0 7px #FF79DA;
+  }
+  90% {
+    color: #9356DC;
+    text-shadow: none;
+  }
+  100% {
+    color: #FF79DA;
+    text-shadow: 0 0 7px #FF79DA;
+  }
+}
+
 @keyframes flash {
   0% {
     color: #FF79DA;
@@ -33,6 +48,20 @@ a:link {
     text-shadow: 0 0 7px #FF79DA;
   }
 }
+@-webkit-keyframes loader {
+  0% {
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  90% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @keyframes loader {
   0% {
     opacity: 0.9;
@@ -45,6 +74,11 @@ a:link {
   }
   100% {
     opacity: 0;
+  }
+}
+@-webkit-keyframes dis {
+  100% {
+    visibility: hidden;
   }
 }
 @keyframes dis {
@@ -62,7 +96,8 @@ a:link {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loader 3s ease-in-out;
+  -webkit-animation: loader 3s ease-in-out;
+          animation: loader 3s ease-in-out;
   opacity: 0;
   pointer-events: none;
 }
@@ -70,37 +105,48 @@ a:link {
   color: #9356DC;
   font-size: 7vw;
   letter-spacing: 4vw;
-  animation: flash 1.2s linear infinite;
+  -webkit-animation: flash 1.2s linear infinite;
+          animation: flash 1.2s linear infinite;
 }
 .loader__lettre:nth-child(1) {
-  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 .loader__lettre:nth-child(2) {
-  animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 .loader__lettre:nth-child(3) {
-  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
 }
 .loader__lettre:nth-child(4) {
-  animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 .loader__lettre:nth-child(5) {
-  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 .loader__lettre:nth-child(6) {
-  animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 .loader__lettre:nth-child(7) {
-  animation-delay: 0.7s;
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }
 .loader__lettre:nth-child(8) {
-  animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
 }
 .loader__lettre:nth-child(9) {
-  animation-delay: 0.9s;
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
 .loader__lettre:nth-child(10) {
-  animation-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 
 .hero__btn {
@@ -305,7 +351,8 @@ a:link {
 .restaurants__new {
   position: absolute;
   transform: translateX(310%) translateY(40%);
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   text-align: center;
   font-size: 14px;
   background-color: #99E2D0;
@@ -322,7 +369,8 @@ a:link {
 .restaurants__img {
   height: 11rem;
   width: auto;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 1rem 1rem 0 0;
 }
 .restaurants__name {
@@ -391,5 +439,3 @@ a:link {
 .iconAjusted {
   margin-left: -0.3rem;
 }
-
-/*# sourceMappingURL=style.css.map */

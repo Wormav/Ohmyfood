@@ -106,7 +106,8 @@
   &__new {
     position: absolute;
     transform: translateX(310%) translateY(40%);
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     text-align: center;
     font-size: 14px;
     background-color: $tertiary;
@@ -115,7 +116,7 @@
     width: 4rem;
     border-radius: 0.3rem;
 
-    @media (min-width: 1400px){
+    @media (min-width: 1400px) {
       transform: translateX(450%) translateY(40%);
     }
   }
@@ -123,7 +124,8 @@
   &__img {
     height: 11rem;
     width: auto;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 1rem 1rem 0 0;
   }
 
