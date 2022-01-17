@@ -25,6 +25,13 @@
             opacity: 0.7;
         }
         100% {
-            opacity: 0;
+           
+          opacity: 0;
+    
         }
+    }
+
+    @keyframes dis{
+        0%{}
+        100%{visibility: hidden;}
     }

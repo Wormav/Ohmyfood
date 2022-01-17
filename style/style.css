@@ -47,12 +47,14 @@ a:link {
     opacity: 0;
   }
 }
+@keyframes dis {
+  100% {
+    visibility: hidden;
+  }
+}
 .loader {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   z-index: 20;
   width: 100%;
   height: 100%;
@@ -62,6 +64,7 @@ a:link {
   align-items: center;
   animation: loader 3s ease-in-out;
   opacity: 0;
+  pointer-events: none;
 }
 .loader__lettre {
   color: #9356DC;
@@ -310,6 +313,11 @@ a:link {
   padding: 0.5rem;
   width: 4rem;
   border-radius: 0.3rem;
+}
+@media (min-width: 1400px) {
+  .restaurants__new {
+    transform: translateX(450%) translateY(40%);
+  }
 }
 .restaurants__img {
   height: 11rem;
