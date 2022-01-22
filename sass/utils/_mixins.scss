@@ -1,3 +1,18 @@
+@mixin whiteBtn {
+  width: auto;
+  height: 4.1rem;
+  background-color: $greyBackground;
+  box-shadow: 0 0.3rem 16px rgb(189, 187, 187);
+  color: black;
+  font-size: 15px;
+  border: none;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+
+
 @mixin hoverBtn {
   cursor: pointer;
   transition: 0.3s;

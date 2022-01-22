@@ -21,16 +21,7 @@
 }
 
 .process__btn {
-  width: auto;
-  height: 4.1rem;
-  background-color: $greyBackground;
-  box-shadow: 0 0.3rem 16px rgb(189, 187, 187);
-  color: black;
-  font-size: 15px;
-  border: none;
-  border-radius: 1rem;
-  padding: 0 1rem;
-  cursor: pointer;
+  @include whiteBtn;
 
   &:hover {
     @include hoverBtn;
@@ -38,7 +29,8 @@
   }
 }
 
-.restaurants__heart , .menu__heart {
+.restaurants__heart,
+.menu__heart {
   position: absolute;
   width: 50px;
   border: none;
@@ -63,5 +55,24 @@
   &:hover {
     opacity: 0;
     transition: 0.5s;
+  }
+}
+
+.menu__element {
+  @include whiteBtn;
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  &:hover{
+    .menu__price{
+       animation: slideLeftPrice 1s ease;
+       animation-fill-mode: forwards;
+    }
+    .validation__box{
+      background-color: red;
+      animation: slideLeftValidation 1s ease;
+      animation-fill-mode: forwards;
+      opacity: 1;
+    }
   }
 }

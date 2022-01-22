@@ -1,9 +1,9 @@
-.header__arrow{
-    position: absolute;
-    margin: 0.8rem 0 0 1rem;
-    & a{
-        color: black;
-    }
+.header__arrow {
+  position: absolute;
+  margin: 0.8rem 0 0 1rem;
+  & a {
+    color: black;
+  }
 }
 
 .banner {
@@ -39,5 +39,58 @@
     margin-left: 86%;
     background-color: $greyBackground;
   }
+  &__content {
+    display: grid;
+    position: absolute;
+    background-color: $greyBackground;
+    width: 100%;
+  }
+  &__part {
+    margin: 1.5rem 0 0 1rem;
+    font-size: 16px;
+    font-weight: lighter;
+    color: grey;
+  }
+  &__underline {
+    border: $tertiary solid 2px;
+    width: 2.4rem;
+    margin: 0.2rem 0 0 1rem;
+  }
+  &__dish {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 1rem;
+  }
+  &__name {
+    margin-top: 0.5rem;
+  }
+  &__description {
+    margin-top: 0.5rem;
+    font-weight: lighter;
+    color: grey;
+  }
+  &__price {
+    margin: 0 0 0 92%;
+    transform: translateY(-1rem);
+  }
 }
 
+.validation__box {
+  display: flex;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: $tertiary;
+  border-radius: 0 15px 15px 0;
+  right: 0px;
+  padding: 0 23px;
+  height: 4.1rem;
+  margin: 0 1rem;
+}
+
+.fa-check-circle {
+  color: white;
+  font-size: 20px;
+  animation: rotate 1.5s ease;
+}

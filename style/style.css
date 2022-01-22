@@ -75,6 +75,30 @@ a:link {
     opacity: 0;
   }
 }
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes slideLeftPrice {
+  0% {
+    margin: 0 0 0 92%;
+  }
+  100% {
+    margin: 0 0 0 70%;
+  }
+}
+@keyframes slideLeftValidation {
+  0% {
+    padding: 0 0px;
+  }
+  100% {
+    padding: 0 23px;
+  }
+}
 .loader {
   position: fixed;
   inset: 0;
@@ -166,7 +190,8 @@ a:link {
   background-color: #9356DC;
 }
 
-.restaurants__heart, .menu__heart {
+.restaurants__heart,
+.menu__heart {
   position: absolute;
   width: 50px;
   border: none;
@@ -192,6 +217,32 @@ a:link {
 .heart__Svg--empty:hover {
   opacity: 0;
   transition: 0.5s;
+}
+
+.menu__element {
+  width: auto;
+  height: 4.1rem;
+  background-color: #f6f6f6;
+  box-shadow: 0 0.3rem 16px #bdbbbb;
+  color: black;
+  font-size: 15px;
+  border: none;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  cursor: pointer;
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.menu__element:hover .menu__price {
+  animation: slideLeftPrice 1s ease;
+  animation-fill-mode: forwards;
+}
+.menu__element:hover .validation__box {
+  background-color: red;
+  animation: slideLeftValidation 1s ease;
+  animation-fill-mode: forwards;
+  opacity: 1;
 }
 
 .header {
@@ -456,6 +507,60 @@ a:link {
   width: 1.5rem;
   margin-left: 86%;
   background-color: #f6f6f6;
+}
+.menu__content {
+  display: grid;
+  position: absolute;
+  background-color: #f6f6f6;
+  width: 100%;
+}
+.menu__part {
+  margin: 1.5rem 0 0 1rem;
+  font-size: 16px;
+  font-weight: lighter;
+  color: grey;
+}
+.menu__underline {
+  border: #99E2D0 solid 2px;
+  width: 2.4rem;
+  margin: 0.2rem 0 0 1rem;
+}
+.menu__dish {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 1rem;
+}
+.menu__name {
+  margin-top: 0.5rem;
+}
+.menu__description {
+  margin-top: 0.5rem;
+  font-weight: lighter;
+  color: grey;
+}
+.menu__price {
+  margin: 0 0 0 92%;
+  transform: translateY(-1rem);
+}
+
+.validation__box {
+  display: flex;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: #99E2D0;
+  border-radius: 0 15px 15px 0;
+  right: 0px;
+  padding: 0 23px;
+  height: 4.1rem;
+  margin: 0 1rem;
+}
+
+.fa-check-circle {
+  color: white;
+  font-size: 20px;
+  animation: rotate 1.5s ease;
 }
 
 /*# sourceMappingURL=style.css.map */

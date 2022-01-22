@@ -63,3 +63,30 @@
     
         }
     }
+
+    @keyframes rotate {
+    0% {
+        transform: rotate(0);
+}
+100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slideLeftPrice {
+    0%{
+        margin: 0 0 0 92%;
+    }
+    100%{
+        margin: 0 0 0 70%;
+    }
+}
+
+@keyframes slideLeftValidation {
+    0%{
+        padding: 0 0px;
+    }
+    100%{
+        padding: 0 23px;
+    }
+}
