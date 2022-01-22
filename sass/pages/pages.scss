@@ -1,0 +1,43 @@
+.header__arrow{
+    position: absolute;
+    margin: 0.8rem 0 0 1rem;
+    & a{
+        color: black;
+    }
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  &__picture {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+  }
+}
+
+.menu {
+  position: absolute;
+  width: 100%;
+  transform: translateX(0) translateY(-60%);
+
+  &__head {
+    display: flex;
+    padding-top: 1.2rem;
+    background-color: $greyBackground;
+    border-radius: 2rem 2rem 0rem 0rem;
+  }
+  &__title {
+    margin-left: 1rem;
+    font-family: "Shrikhand";
+    font-size: 22px;
+  }
+  &__heart {
+    width: 1.5rem;
+    margin-left: 86%;
+    background-color: $greyBackground;
+  }
+}
+
