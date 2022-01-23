@@ -19,3 +19,25 @@
   opacity: 0.5;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
 }
+
+@mixin colorBtn {
+  background: rgb(238, 115, 218);
+  background: linear-gradient(
+    180deg,
+    rgba(238, 115, 218, 1) 0%,
+    rgba(160, 90, 220, 1) 100%
+  );
+  box-shadow: 0 0.3rem 16px rgb(153, 153, 153);
+  width: auto;
+  height: 3rem;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem;
+  cursor: pointer;
+
+  &:hover {
+    @include hoverBtn;
+  }
+}
