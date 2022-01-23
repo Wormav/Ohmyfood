@@ -234,15 +234,24 @@ a:link {
   display: flex;
   flex-direction: column;
 }
+.menu__element:hover .validation__box {
+  opacity: 1;
+  animation: slideLeftValidation 1s ease;
+}
 .menu__element:hover .menu__price {
   animation: slideLeftPrice 1s ease;
   animation-fill-mode: forwards;
 }
-.menu__element:hover .validation__box {
-  background-color: red;
-  animation: slideLeftValidation 1s ease;
-  animation-fill-mode: forwards;
-  opacity: 1;
+.menu__element:hover .fa-check-circle {
+  animation: rotate 1s ease;
+}
+.menu__element:hover .menu__description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__element:hover .menu__name {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .header {
@@ -405,12 +414,17 @@ a:link {
   font-weight: bold;
   font-size: 18px;
   margin: 1rem 0 0 1rem;
+  color: black;
 }
 .restaurants__localisation {
   font-size: 18px;
   margin: 0.3rem 0 0 1rem;
   color: black;
   font-weight: lighter;
+}
+
+.lastElement {
+  margin-bottom: 4rem;
 }
 
 .footer {
@@ -532,15 +546,21 @@ a:link {
 }
 .menu__name {
   margin-top: 0.5rem;
+  width: 70%;
+  white-space: nowrap;
 }
 .menu__description {
-  margin-top: 0.5rem;
+  position: absolute;
+  margin-top: 2.5rem;
   font-weight: lighter;
   color: grey;
+  width: 55%;
+  white-space: nowrap;
 }
 .menu__price {
+  background-color: #f6f6f6;
   margin: 0 0 0 92%;
-  transform: translateY(-1rem);
+  transform: translateY(55%);
 }
 
 .validation__box {
@@ -559,8 +579,7 @@ a:link {
 
 .fa-check-circle {
   color: white;
-  font-size: 20px;
-  animation: rotate 1.5s ease;
+  font-size: 22px;
 }
 
 /*# sourceMappingURL=style.css.map */

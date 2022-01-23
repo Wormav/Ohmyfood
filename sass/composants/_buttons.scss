@@ -63,16 +63,23 @@
   margin: 0 1rem;
   display: flex;
   flex-direction: column;
-  &:hover{
-    .menu__price{
-       animation: slideLeftPrice 1s ease;
-       animation-fill-mode: forwards;
-    }
-    .validation__box{
-      background-color: red;
-      animation: slideLeftValidation 1s ease;
-      animation-fill-mode: forwards;
-      opacity: 1;
-    }
+  &:hover .validation__box {
+    opacity: 1;
+    animation: slideLeftValidation 1s ease;
+  }
+  &:hover .menu__price {
+    animation: slideLeftPrice 1s ease;
+    animation-fill-mode: forwards;
+  }
+  &:hover .fa-check-circle {
+    animation: rotate 1s ease;
+  }
+  &:hover .menu__description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &:hover .menu__name {
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }

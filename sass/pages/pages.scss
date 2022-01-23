@@ -63,15 +63,22 @@
   }
   &__name {
     margin-top: 0.5rem;
+    width: 70%;
+    white-space: nowrap;
+   
   }
   &__description {
-    margin-top: 0.5rem;
+    position: absolute;
+    margin-top: 2.5rem;
     font-weight: lighter;
     color: grey;
+    width: 55%;
+    white-space: nowrap;   
   }
   &__price {
+    background-color: $greyBackground;
     margin: 0 0 0 92%;
-    transform: translateY(-1rem);
+    transform: translateY(55%);
   }
 }
 
@@ -91,6 +98,5 @@
 
 .fa-check-circle {
   color: white;
-  font-size: 20px;
-  animation: rotate 1.5s ease;
+  font-size: 22px;
 }

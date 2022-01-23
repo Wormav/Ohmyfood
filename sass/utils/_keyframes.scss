@@ -1,92 +1,88 @@
 @-webkit-keyframes flash {
-        0% {
-            color:$secondary;
-            text-shadow: 0 0 7px $secondary;
-        }
-        90% {
-            color:$primary;
-            text-shadow: none;
-        }
-        100% {
-            color:$secondary;
-            text-shadow: 0 0 7px $secondary;
-        }
-    }
-
-    @keyframes flash {
-        0% {
-            color:$secondary;
-            text-shadow: 0 0 7px $secondary;
-        }
-        90% {
-            color:$primary;
-            text-shadow: none;
-        }
-        100% {
-            color:$secondary;
-            text-shadow: 0 0 7px $secondary;
-        }
-    }
-
-    @-webkit-keyframes loader{
-        0% {
-            opacity: 0.9;
-        }
-        80% {
-            opacity: 0.8;
-        }
-
-        90%{
-            opacity: 0.7;
-        }
-        100% {
-           
-          opacity: 0;
-    
-        }
-    }
-
-    @keyframes loader{
-        0% {
-            opacity: 0.9;
-        }
-        80% {
-            opacity: 0.8;
-        }
-
-        90%{
-            opacity: 0.7;
-        }
-        100% {
-           
-          opacity: 0;
-    
-        }
-    }
-
-    @keyframes rotate {
-    0% {
-        transform: rotate(0);
+  0% {
+    color: $secondary;
+    text-shadow: 0 0 7px $secondary;
+  }
+  90% {
+    color: $primary;
+    text-shadow: none;
+  }
+  100% {
+    color: $secondary;
+    text-shadow: 0 0 7px $secondary;
+  }
 }
-100% {
-        transform: rotate(360deg);
-    }
+
+@keyframes flash {
+  0% {
+    color: $secondary;
+    text-shadow: 0 0 7px $secondary;
+  }
+  90% {
+    color: $primary;
+    text-shadow: none;
+  }
+  100% {
+    color: $secondary;
+    text-shadow: 0 0 7px $secondary;
+  }
+}
+
+@-webkit-keyframes loader {
+  0% {
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 0.8;
+  }
+
+  90% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes loader {
+  0% {
+    opacity: 0.9;
+  }
+  80% {
+    opacity: 0.8;
+  }
+
+  90% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes slideLeftPrice {
-    0%{
-        margin: 0 0 0 92%;
-    }
-    100%{
-        margin: 0 0 0 70%;
-    }
+  0% {
+    margin: 0 0 0 92%;
+  }
+  100% {
+    margin: 0 0 0 70%;
+  }
 }
 
 @keyframes slideLeftValidation {
-    0%{
-        padding: 0 0px;
-    }
-    100%{
-        padding: 0 23px;
-    }
+  0% {
+    padding: 0 0px;
+  }
+  100% {
+    padding: 0 23px;
+  }
 }

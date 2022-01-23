@@ -130,9 +130,11 @@
   }
 
   &__name {
+    
     font-weight: bold;
     font-size: 18px;
     margin: 1rem 0 0 1rem;
+    color: black;
   }
 
   &__localisation {
@@ -141,4 +143,8 @@
     color: black;
     font-weight: lighter;
   }
+}
+
+.lastElement{
+  margin-bottom: 4rem;
 }
