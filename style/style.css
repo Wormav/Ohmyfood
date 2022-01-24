@@ -85,10 +85,10 @@ a:link {
 }
 @keyframes slideLeftPrice {
   0% {
-    margin: 0 0 0 92%;
+    margin: 0 10px 0 0;
   }
   100% {
-    margin: 0 0 0 72%;
+    margin: 0 60px 0 0;
   }
 }
 @keyframes slideLeftValidation {
@@ -105,6 +105,14 @@ a:link {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes monted {
+  0% {
+    transform: translateY(0.5%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 .loader {
@@ -239,7 +247,7 @@ a:link {
   padding: 0 1rem;
   cursor: pointer;
   opacity: 0;
-  margin: 0 1rem;
+  margin: 0.5rem 1rem 0 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -593,6 +601,7 @@ a:link {
   display: grid;
   grid-template-columns: 1fr;
   margin-top: 1rem;
+  animation: monted 1.5s ease;
 }
 .menu__dish:nth-child(3) {
   margin-bottom: 2rem;
@@ -608,12 +617,15 @@ a:link {
   font-weight: lighter;
   color: grey;
   width: 55%;
-  white-space: nowrap;
+}
+.menu__value {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.6rem;
+  background-color: #f6f6f6;
 }
 .menu__price {
-  background-color: #f6f6f6;
-  margin: 0 0 0 92%;
-  transform: translateY(55%);
+  margin-right: 10px;
 }
 .menu__order {
   display: flex;
@@ -679,7 +691,7 @@ a:link {
 }
 
 .footer--pages {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 15rem;
