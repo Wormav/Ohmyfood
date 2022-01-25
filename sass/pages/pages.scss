@@ -79,6 +79,7 @@
   }
   &__description {
     position: absolute;
+    white-space: nowrap;
     margin-top: 2.5rem;
     font-weight: lighter;
     color: grey;
