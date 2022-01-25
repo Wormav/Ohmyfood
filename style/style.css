@@ -595,7 +595,7 @@ a:link {
 .menu__underline {
   border: #99E2D0 solid 2px;
   width: 2.4rem;
-  margin: 0.2rem 0 0 1rem;
+  margin: 0.2rem 0 1rem 1rem;
 }
 .menu__dish {
   display: grid;
@@ -697,8 +697,13 @@ a:link {
   flex-direction: column;
   height: 15rem;
   width: 100%;
-  margin-top: 69rem;
+  margin-top: 66rem;
   background-color: #353535;
+}
+@media (min-width: 600px) {
+  .footer--pages {
+    margin-top: 62rem;
+  }
 }
 @media (min-width: 1000px) {
   .footer--pages {
@@ -707,6 +712,7 @@ a:link {
     justify-content: center;
     align-items: center;
     height: 5rem;
+    margin-top: 62rem;
   }
 }
 
