@@ -76,7 +76,7 @@
     margin-top: 1rem;
     justify-content: center;
 
-    @media (min-width: 1000px) {
+    @media screen and (min-width: 1000px) {
       grid-template-columns: repeat(2, 1fr);
       justify-items: center;
     }
@@ -91,7 +91,7 @@
     width: 21rem;
     margin: 0 1rem;
 
-    @media (min-width: 1400px) {
+    @media screen and (min-width: 1400px) {
       width: 30rem;
     }
     &:nth-child(4) {
@@ -116,7 +116,7 @@
     width: 4rem;
     border-radius: 0.3rem;
 
-    @media (min-width: 1400px) {
+    @media screen and (min-width: 1400px) {
       transform: translateX(450%) translateY(40%);
     }
   }
